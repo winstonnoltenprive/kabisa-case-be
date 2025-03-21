@@ -1,0 +1,16 @@
+/Users/winstonnolten/Desktop/kabisa/src/main/java/nl/kabisa/quote/QuoteApplication.java
+/Users/winstonnolten/Desktop/kabisa/src/main/java/nl/kabisa/quote/domain/repository/LikeRepository.java
+/Users/winstonnolten/Desktop/kabisa/src/main/java/nl/kabisa/quote/domain/repository/QuoteRepository.java
+/Users/winstonnolten/Desktop/kabisa/src/main/java/nl/kabisa/quote/domain/repository/model/Like.java
+/Users/winstonnolten/Desktop/kabisa/src/main/java/nl/kabisa/quote/domain/repository/model/Quote.java
+/Users/winstonnolten/Desktop/kabisa/src/main/java/nl/kabisa/quote/domain/repository/model/QuoteUser.java
+/Users/winstonnolten/Desktop/kabisa/src/main/java/nl/kabisa/quote/domain/service/QuoteService.java
+/Users/winstonnolten/Desktop/kabisa/src/main/java/nl/kabisa/quote/domain/service/model/DummyJsonResponse.java
+/Users/winstonnolten/Desktop/kabisa/src/main/java/nl/kabisa/quote/domain/service/model/DummyQuote.java
+/Users/winstonnolten/Desktop/kabisa/src/main/java/nl/kabisa/quote/domain/service/model/ZenQuoteResponse.java
+/Users/winstonnolten/Desktop/kabisa/src/main/java/nl/kabisa/quote/rest/RestConfig.java
+/Users/winstonnolten/Desktop/kabisa/src/main/java/nl/kabisa/quote/rest/controller/QuoteController.java
+/Users/winstonnolten/Desktop/kabisa/src/main/java/nl/kabisa/quote/rest/mapper/QuoteMapper.java
+/Users/winstonnolten/Desktop/kabisa/src/main/java/nl/kabisa/quote/rest/mapper/QuoteUserMapper.java
+/Users/winstonnolten/Desktop/kabisa/src/main/java/nl/kabisa/quote/rest/model/QuoteResponse.java
+/Users/winstonnolten/Desktop/kabisa/src/main/java/nl/kabisa/quote/rest/model/QuoteUser.java
