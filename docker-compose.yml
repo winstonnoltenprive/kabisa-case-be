@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: quote-postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: quotes_user
+      POSTGRES_PASSWORD: quotes_pass
+      POSTGRES_DB: quotes_db
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
