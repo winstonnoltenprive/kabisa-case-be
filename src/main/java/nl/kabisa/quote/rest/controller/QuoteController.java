@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api")
 @RequiredArgsConstructor
+
 public class QuoteController {
 
     @Autowired
@@ -31,7 +32,7 @@ public class QuoteController {
             method = RequestMethod.POST,
             value = "/quote",
             produces = {
-                    MediaType.APPLICATION_JSON_VALUE}
+                    MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE}
     )
     public ResponseEntity<QuoteResponse> getQuote(@RequestBody(required = false) QuoteUser quoteUser) {
 

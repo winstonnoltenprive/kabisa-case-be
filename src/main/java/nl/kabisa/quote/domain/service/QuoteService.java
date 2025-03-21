@@ -24,6 +24,9 @@ import java.util.concurrent.ThreadLocalRandom;
 @RequiredArgsConstructor
 public class QuoteService {
 
+    private static final String ZEN_QUOTES_API_URL = "https://zenquotes.io/api/random";
+    private static final String DUMMY_QUOTES_API_URL = "https://dummyjson.com/quotes";
+
     @Autowired
     private QuoteRepository quoteRepository;
     @Autowired
@@ -73,8 +76,8 @@ public class QuoteService {
 
     private List<Quote> fetchQuotesFromApi() {
         try {
-            DummyJsonResponse response = restTemplate.getForObject(
-                    "https://dummyjson.com/quotes", DummyJsonResponse.class);
+            DummyJsonResponse response =
+                    restTemplate.getForObject(DUMMY_QUOTES_API_URL, DummyJsonResponse.class);
             if (response != null && response.quotes != null) {
                 return response.quotes.stream()
                         .map(q -> new Quote(null, q.quote, q.author))
@@ -84,7 +87,7 @@ public class QuoteService {
         }
 
         try {
-            String json = restTemplate.getForObject("https://zenquotes.io/api/random", String.class);
+            String json = restTemplate.getForObject(ZEN_QUOTES_API_URL, String.class);
             List<ZenQuoteResponse> zenQuotes = objectMapper.readValue(json, new TypeReference<>() {
             });
             return zenQuotes.stream()
